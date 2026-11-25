@@ -46,6 +46,32 @@ If any item of a multi-part request is unclear, ask before doing any of it. Stop
 - A non-trivial task ends with three short lists: files changed, verification results, open risks.
 - When corrected, fix it in one sentence without an apology.
 
+## Documentation and research material management
+
+- Research notes, reference materials, experimental data, experimental
+  results, analyses and intermediate research findings must be documented
+  in `doc/memo/memo_*.md`. Do not embed such content in README files or
+  source code, including code comments.
+- Organize and name memo files by feature, module or research topic.
+  Use descriptive and consistent filenames so that future work sessions
+  can quickly locate and reuse relevant research materials without
+  repeating previous investigations.
+- Final research reports, technical documentation and other user-facing
+  materials must be placed in `doc/*.md`.
+- Keep `README.md` concise. Include only a basic project overview,
+  quick-start instructions and usage examples. Link to the relevant
+  documentation in `doc/` when further explanation is needed.
+- All version history, release notes and change records must be
+  maintained in `doc/*CHANGELOG*`, not in `README.md` or source code.
+- Before starting research or modifying an existing feature, check
+  relevant memo files in `doc/memo/` to avoid duplicating previous work.
+- Update existing relevant memo files instead of creating redundant
+  files. Keep research findings, assumptions, limitations and
+  unresolved issues up to date.
+- Clearly distinguish verified findings, hypotheses, experimental
+  results and unresolved questions in research memos. Include
+  references and reproduction details where applicable.
+  
 ## Project
 
 <!-- Replace this section per project: what the project is, how to build and test it, and constraints that are not visible in the code. -->
